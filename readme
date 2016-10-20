@@ -1,1 +1,15 @@
-leds blinking example 
+linux kernel module programming 
+blinking keyboard leds kernel module .. 
+kernel version 3.4 and above 
+
+for using it ( on your responsibility)
+
+make clean
+make 
+
+sudo insmod kbleds.ko
+
+//to stop it 
+
+sudo rmmod kbleds
+
