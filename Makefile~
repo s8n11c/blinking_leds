@@ -1,0 +1,8 @@
+obj-m += kbleds.o
+
+all:
+	make -C /usr/src/kernels/$(shell uname -r )/build M=$(PWD) modules
+
+
+clean:
+	make -C /usr/src/kernels/$(shell uname -r)/build M=$(pwd) clean
